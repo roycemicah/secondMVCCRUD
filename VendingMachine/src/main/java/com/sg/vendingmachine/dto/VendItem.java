@@ -6,6 +6,7 @@
 package com.sg.vendingmachine.dto;
 
 import java.math.BigDecimal;
+import java.util.Objects;
 
 /**
  * FINAL COPY
@@ -30,6 +31,43 @@ public class VendItem {
         this.quantity = quantity;
         this.row = row;
         
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 5;
+        hash = 79 * hash + Objects.hashCode(this.item);
+        hash = 79 * hash + Objects.hashCode(this.price);
+        hash = 79 * hash + this.quantity;
+        hash = 79 * hash + Objects.hashCode(this.row);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final VendItem other = (VendItem) obj;
+        if (this.quantity != other.quantity) {
+            return false;
+        }
+        if (!Objects.equals(this.item, other.item)) {
+            return false;
+        }
+        if (!Objects.equals(this.row, other.row)) {
+            return false;
+        }
+        if (!Objects.equals(this.price, other.price)) {
+            return false;
+        }
+        return true;
     }
 
     public String getRow() {

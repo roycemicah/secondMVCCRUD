@@ -39,7 +39,6 @@ public class VendingMachineDaoFileImpl implements VendingMachineDao {
 
     public VendingMachineDaoFileImpl() {
 
-        // create a new instance of a class
         DATA_FILE = "DATA_FILE.txt";
 
     }

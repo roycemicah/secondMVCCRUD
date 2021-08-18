@@ -14,7 +14,7 @@ package com.sg.vendingmachine.enums;
  * Purpose: Milestone 3 Assessment: Vending Machine Exercise
  */
 public enum Coin {
-    /*
+    
     PENNY(1), NICKEL(5), DIME(10), QUARTER(25);
     
     private int value;
@@ -25,6 +25,6 @@ public enum Coin {
     
     public int getCoinValue() {
         return value;
-    } */
+    }
     
 }

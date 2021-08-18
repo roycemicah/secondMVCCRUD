@@ -42,7 +42,7 @@ public class VendingMachineServiceLayerFileImpl implements VendingMachineService
         return dao.getItem(itemRow);
     }
     
-    // business methods/logic...
+    // the most important business logic...
     @Override
     public BigDecimal vendItem(BigDecimal deposit, String row) throws VendingMachineDaoPersistenceException, 
             NoItemInventoryException, 

@@ -52,11 +52,14 @@ public class VendingMachineDaoFileImplTest {
         testDao.addItem(testItem);
 
         VendItem retrievedItem = testDao.getItem(itemRow);
+        // this is the shorter form, equating both objects and comparing their properties
+        assertEquals(testItem, retrievedItem);
 
+        /* With the generated hashCode, this is no longer necessary.
         assertEquals(testItem.getRow(), retrievedItem.getRow(), "Checking row for item.");
         assertEquals(testItem.getItem(), retrievedItem.getItem(), "Checking item name.");
         assertEquals(testItem.getPrice(), retrievedItem.getPrice(), "Checking item price.");
-        assertEquals(testItem.getQuantity(), retrievedItem.getQuantity(), "Checking quantity.");
+        assertEquals(testItem.getQuantity(), retrievedItem.getQuantity(), "Checking quantity.");*/
 
     }
     

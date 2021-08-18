@@ -11,3 +11,4 @@
 2021-08-18T04:38:55.172661 : User purchased Ruffles Sour Cream 'N Onion @ $1.75 from row 1
 2021-08-18T04:39:13.674391 : User purchased Ruffles Sour Cream 'N Onion @ $1.75 from row 1
 2021-08-18T04:40:27.980564 : User purchased Thirsty Buddha Sparkling Coconut Water 11.2oz @ $1.85 from row 10
+2021-08-18T09:30:18.736977 : User purchased Vickie's Applewood Barbecue @ $1.50 from row 3
